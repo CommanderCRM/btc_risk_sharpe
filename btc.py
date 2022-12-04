@@ -9,7 +9,7 @@ print(data.info['description'])
 
 price = data.history('1y')['Close']
 
-change = price.pct_change() 
+change = price.pct_change()
 cum_returns = (change+1).cumprod()
 
 cum_returns.plot()
